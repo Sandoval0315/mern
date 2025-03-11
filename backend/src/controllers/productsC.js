@@ -1,4 +1,4 @@
-const productsC = {};
+    const productsC = {};
 
 //codigo para el crud y sus funciones
 
