@@ -1,7 +1,6 @@
 const empleadosC = {};
 
 import empleadosM from "../models/empleadosM.js"
-import productsM from "../models/productsM";
 
 empleadosC.getempleado = async( req, res) =>{
     const empleados = await empleadosM.find()
@@ -12,7 +11,7 @@ empleadosC.insertempleado = async (req, res) =>{
     const{name, lastName, birthday, email, address, hireDate, password,cellphone, dui, isssNumber, isVerified} = req.body;
     const newempleado = new empleadosM({name, lastName, birthday, email, address, hireDate, password,cellphone, dui, isssNumber, isVerified})
     await newempleado.save()
-    res.json({"empleado saved"})
+    res.json({menssage: "empleado saved"})
 }
 
 empleadosC.deleteempleado = async (req,res) => {

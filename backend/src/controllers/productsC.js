@@ -1,6 +1,4 @@
-    const productsC = {};
-
-//codigo para el crud y sus funciones
+const productsC = {};
 
 // SELECT
 import productsM from "../models/productsM.js";
