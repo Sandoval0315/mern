@@ -70,3 +70,7 @@ const empleadosSchemas = new Schema({
     }
 }
 )
+
+export default model("empleados", empleadosSchemas);
+
+

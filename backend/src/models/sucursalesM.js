@@ -20,3 +20,5 @@ const sucursalSchemas = new Schema({
         require: true
     }
 })
+
+export default model("sucursales", sucursalSchemas);
