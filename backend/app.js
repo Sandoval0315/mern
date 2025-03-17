@@ -11,5 +11,7 @@ app.use(express.json())
 // definir ruta
 app.use ("/api/products", productsRoutes);
 app.use ("/api/clients", clientsRoutes);
+app.use ("/api/sucursales", sucursalesRoutes)
+app.use ("/api/empleados", empleadosRoutes)
 
 export default app; 
