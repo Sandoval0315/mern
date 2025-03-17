@@ -11,7 +11,7 @@ sucursalesC.insertsucursales = async (req, res) =>{
     const{name, address, cellphone,schedule} = req.body;
     const newsucursal = new sucursalesM({name, address, cellphone,schedule})
     await newsucursal.save()
-    res.json({massage: "sucursal saved"})
+    res.json({message: "sucursal saved"})
 }
 //delete
 sucursalesC.deletesucursales = async (req, res)=>{
@@ -23,7 +23,7 @@ sucursalesC.deletesucursales = async (req, res)=>{
 sucursalesC.updatesucursales = async (req, res) =>{
     const{name, address, cellphone,schedule} = req.body;
     const updatesucursales = await sucursalesM.findByIdAndUpdate(req.params.id,{name, address, cellphone,schedule}, {new: true})
-    req.json({message: "sucursales update"})
+    res.json({message: "sucursales update"})
 }
 
 export default sucursalesC;

@@ -3,10 +3,10 @@ import clientsC from "../controllers/clientsC.js"
 
 const router = express.Router();
 router.route("/")
-.get(clientsC.getproducts)
-.post(clientsC.insertProducts)
+.get(clientsC.getclients)
+.post(clientsC.insertclients)
 router.route("/:id")
-.put(clientsC.updateProducts)
-.delete(clientsC.deleteProducts)
+.put(clientsC.updateclients)
+.delete(clientsC.deleteclients)
 
 export default router;

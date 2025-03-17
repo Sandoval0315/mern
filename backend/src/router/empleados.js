@@ -3,10 +3,10 @@ import empleadosC from "../controllers/empleadosC.js"
 
 const router = express.Router();
 router.route("/")
-.get(empleadosC.getproducts)
-.post(empleadosC.insertProducts)
+.get(empleadosC.getempleado)
+.post(empleadosC.insertempleado)
 router.route("/:id")
-.put(empleadosC.updateProducts)
-.delete(empleadosC.deleteProducts)
+.put(empleadosC.updateempleado)
+.delete(empleadosC.deleteempleado)
 
 export default router;

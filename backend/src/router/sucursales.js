@@ -3,10 +3,10 @@ import sucursalesC from "../controllers/sucursalesC.js"
 
 const router = express.Router();
 router.route("/")
-.get(sucursalesC.getproducts)
-.post(sucursalesC.insertProducts)
+.get(sucursalesC.getsucursales)
+.post(sucursalesC.insertsucursales)
 router.route("/:id")
-.put(sucursalesC.updateProducts)
-.delete(sucursalesC.deleteProducts)
+.put(sucursalesC.updatesucursales)
+.delete(sucursalesC.deletesucursales)
 
 export default router;

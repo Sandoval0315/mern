@@ -1,4 +1,4 @@
-import { Schema, models } from "mongoose";
+import { Schema, model} from "mongoose";
 
 const sucursalSchemas = new Schema({
     name: {
